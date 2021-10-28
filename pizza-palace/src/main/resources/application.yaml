@@ -3,12 +3,14 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://sept-2109-java-mj.citlrw3gp4ym.us-east-2.rds.amazonaws.com:5432/pizzapalacedb
-    username: pizzauser
-    password: P4ssw0rd
+    url: ${pizzadbURL}
+    username: ${pizzadbUsername}
+    password: ${pizzadbPassword}
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: false
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
+
+#${env}

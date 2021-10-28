@@ -26,8 +26,14 @@ public class UserService {
 		return uRepo.findAll();
 	}
 	
-	public void insertUser(User user) {
+	public User insertUser(User user) {
+		User verifyUser = uRepo.findByUserName(user.getUserName());
+		if (verifyUser != null) {
+			System.out.println("User already exist");
+			return null;
+		}
 		uRepo.save(user);
+		return uRepo.findByUserName(user.getUserName());
 	}
 	
 	public User getUserByName(String name) {
@@ -40,5 +46,23 @@ public class UserService {
 	
 	public void deleteUser(User user) {
 		uRepo.delete(user);
+	}
+	
+	public User verifyPassword(User user) {
+		User verifyUser = uRepo.findByUserName(user.getUserName());
+		
+		System.out.println("Verify User: " + verifyUser);
+		
+		if (verifyUser == null) {
+			System.out.println("There no such user");
+			return null;
+		}
+		
+		if(!user.getUserPassword().equals(verifyUser.getUserPassword())) {
+			System.out.println("Passwords didn't matched");
+			return null;
+		}
+		
+		return verifyUser;
 	}
 }
