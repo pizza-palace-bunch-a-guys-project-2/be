@@ -94,6 +94,6 @@ public class UserController {
 			return new ResponseEntity<>(null, HttpStatus.FORBIDDEN);
 		}
 		
-		return new ResponseEntity<>(verifiedUser, HttpStatus.OK);
+		return new ResponseEntity<>("Success", HttpStatus.OK);
 	}
 }

@@ -7,10 +7,13 @@ import org.springframework.stereotype.Service;
 
 import com.revature.models.User;
 import com.revature.repositories.UserRepository;
+import com.revature.utils.PasswordEncrypter;
 
 @Service
 public class UserService {
 	private UserRepository uRepo;
+	private PasswordEncrypter encr = new PasswordEncrypter();
+	private String salt = "itMbrvNjVoId0qpezuvwvWIcybb0rI";
 
 	public UserService() {
 		// TODO Auto-generated constructor stub
@@ -21,7 +24,7 @@ public class UserService {
 		super();
 		this.uRepo = uRepo;
 	}
-	
+
 	public List<User> getAllUser() {
 		return uRepo.findAll();
 	}
@@ -32,6 +35,9 @@ public class UserService {
 			System.out.println("User already exist");
 			return null;
 		}
+		
+		user.setUserPassword(getEncrypteString(user.getUserPassword()));
+		
 		uRepo.save(user);
 		return uRepo.findByUserName(user.getUserName());
 	}
@@ -58,11 +64,16 @@ public class UserService {
 			return null;
 		}
 		
-		if(!user.getUserPassword().equals(verifyUser.getUserPassword())) {
+		if(!getEncrypteString(user.getUserPassword()).equals(verifyUser.getUserPassword())) {
 			System.out.println("Passwords didn't matched");
 			return null;
 		}
 		
 		return verifyUser;
 	}
+	
+	public String getEncrypteString(String str) {
+		return this.encr.generateSecurePassword(str, salt);
+	}
+	
 }
