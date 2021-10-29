@@ -81,6 +81,8 @@ public class UserController {
 			return new ResponseEntity<>(null, HttpStatus.FORBIDDEN);
 		}
 		
+		newUser.setUserPassword(null);
+		
 		return new ResponseEntity<>(newUser, HttpStatus.CREATED);
 	}
 	
@@ -94,6 +96,8 @@ public class UserController {
 			return new ResponseEntity<>(null, HttpStatus.FORBIDDEN);
 		}
 		
-		return new ResponseEntity<>("Success", HttpStatus.OK);
+		verifiedUser.setUserPassword(null);
+		
+		return new ResponseEntity<>(verifiedUser, HttpStatus.OK);
 	}
 }

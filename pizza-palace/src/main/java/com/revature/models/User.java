@@ -30,6 +30,18 @@ public class User {
 	
 	@Column(name="user_last_name")
 	private String userLastName;
+	
+	@Column(name="user_address")
+	private String userAddress;
+	
+	@Column(name="user_city")
+	private String userCity;
+	
+	@Column(name="user_state")
+	private String userState;
+	
+	@Column(name="user_zip")
+	private String userZip;
 
 	public User() {
 		// TODO Auto-generated constructor stub
@@ -41,18 +53,8 @@ public class User {
 		this.userPassword = userPassword;
 	}
 
-	public User(String userName, String userPassword, String userEmail, String userFirstName, String userLastName) {
-		super();
-		this.userName = userName;
-		this.userPassword = userPassword;
-		this.userEmail = userEmail;
-		this.userFirstName = userFirstName;
-		this.userLastName = userLastName;
-	}
-	
-
 	public User(int userId, String userName, String userPassword, String userEmail, String userFirstName,
-			String userLastName) {
+			String userLastName, String userAddress, String userCity, String userState, String userZip) {
 		super();
 		this.userId = userId;
 		this.userName = userName;
@@ -60,6 +62,10 @@ public class User {
 		this.userEmail = userEmail;
 		this.userFirstName = userFirstName;
 		this.userLastName = userLastName;
+		this.userAddress = userAddress;
+		this.userCity = userCity;
+		this.userState = userState;
+		this.userZip = userZip;
 	}
 
 	public String getUserName() {
@@ -106,10 +112,43 @@ public class User {
 		this.userLastName = userLastName;
 	}
 
+	public String getUserAddress() {
+		return userAddress;
+	}
+
+	public void setUserAddress(String userAddress) {
+		this.userAddress = userAddress;
+	}
+
+	public String getUserCity() {
+		return userCity;
+	}
+
+	public void setUserCity(String userCity) {
+		this.userCity = userCity;
+	}
+
+	public String getUserState() {
+		return userState;
+	}
+
+	public void setUserState(String userState) {
+		this.userState = userState;
+	}
+
+	public String getUserZip() {
+		return userZip;
+	}
+
+	public void setUserZip(String userZip) {
+		this.userZip = userZip;
+	}
+
 	@Override
 	public String toString() {
 		return "User [userId=" + userId + ", userName=" + userName + ", userPassword=" + userPassword + ", userEmail="
-				+ userEmail + ", userFirstName=" + userFirstName + ", userLastName=" + userLastName + "]";
+				+ userEmail + ", userFirstName=" + userFirstName + ", userLastName=" + userLastName + ", userAddress="
+				+ userAddress + ", userCity=" + userCity + ", userState=" + userState + ", userZip=" + userZip + "]";
 	}
 	
 }
