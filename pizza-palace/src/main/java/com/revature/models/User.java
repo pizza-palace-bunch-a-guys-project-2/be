@@ -24,11 +24,16 @@ public class User {
 	
 	@Column(name="user_email")
 	private String userEmail;
+	
+	@Column(name="user_first_name")
+	private String userFirstName;
+	
+	@Column(name="user_last_name")
+	private String userLastName;
 
 	public User() {
 		// TODO Auto-generated constructor stub
 	}
-	
 
 	public User(String userName, String userPassword) {
 		super();
@@ -36,18 +41,25 @@ public class User {
 		this.userPassword = userPassword;
 	}
 
-	public User(String userName, String userPassword, String userEmail) {
+	public User(String userName, String userPassword, String userEmail, String userFirstName, String userLastName) {
 		super();
 		this.userName = userName;
 		this.userPassword = userPassword;
 		this.userEmail = userEmail;
+		this.userFirstName = userFirstName;
+		this.userLastName = userLastName;
 	}
+	
 
-	public User(int userId, String userName, String userPassword) {
+	public User(int userId, String userName, String userPassword, String userEmail, String userFirstName,
+			String userLastName) {
 		super();
 		this.userId = userId;
 		this.userName = userName;
 		this.userPassword = userPassword;
+		this.userEmail = userEmail;
+		this.userFirstName = userFirstName;
+		this.userLastName = userLastName;
 	}
 
 	public String getUserName() {
@@ -78,10 +90,26 @@ public class User {
 		this.userEmail = userEmail;
 	}
 
+	public String getUserFirstName() {
+		return userFirstName;
+	}
+
+	public void setUserFirstName(String userFirstName) {
+		this.userFirstName = userFirstName;
+	}
+
+	public String getUserLastName() {
+		return userLastName;
+	}
+
+	public void setUserLastName(String userLastName) {
+		this.userLastName = userLastName;
+	}
+
 	@Override
 	public String toString() {
 		return "User [userId=" + userId + ", userName=" + userName + ", userPassword=" + userPassword + ", userEmail="
-				+ userEmail + "]";
+				+ userEmail + ", userFirstName=" + userFirstName + ", userLastName=" + userLastName + "]";
 	}
 	
 }
