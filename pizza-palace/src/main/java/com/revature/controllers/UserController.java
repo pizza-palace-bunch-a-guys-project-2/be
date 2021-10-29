@@ -37,7 +37,7 @@ public class UserController {
 	
 	@GetMapping("/initial")
 	public ResponseEntity<List<User>> insertInitialValues() {
-		List<User> uList = new ArrayList<User>(Arrays.asList(new User("admin", "admin", "admin@gmail.com")));
+		List<User> uList = new ArrayList<User>(Arrays.asList(new User("admin", "admin")));
 		
 		for(User u: uList) {
 			uServ.insertUser(u);
@@ -94,6 +94,6 @@ public class UserController {
 			return new ResponseEntity<>(null, HttpStatus.FORBIDDEN);
 		}
 		
-		return new ResponseEntity<>(verifiedUser, HttpStatus.OK);
+		return new ResponseEntity<>("Success", HttpStatus.OK);
 	}
 }
