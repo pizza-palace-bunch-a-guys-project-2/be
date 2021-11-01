@@ -1,5 +1,6 @@
 package com.revature.controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,5 +45,19 @@ public class ItemController {
 		itemServ.insertItem(item);
 		return new ResponseEntity<>(item.getItemName() + " inserted", HttpStatus.CREATED);
 	}
+	
+	@PostMapping("/initMenu")
+	public ResponseEntity<Object> insertInitMenu(@RequestBody List<Item> items) {
+		List<Item> checkDB = new ArrayList<>();
+		checkDB = itemServ.findAllItems();
+		if(checkDB.size() > 0) {
+			return new ResponseEntity<>("A Menu Already Exists", HttpStatus.ALREADY_REPORTED);
+		}
+		for(Item item: items) {
+			itemServ.insertItem(item);
+		}
+		return new ResponseEntity<>("Menu Created", HttpStatus.CREATED);
+	}
+
 }
  
