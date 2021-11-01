@@ -1,5 +1,7 @@
 package com.revature.utils;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 import javax.mail.Message;
@@ -11,10 +13,25 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 public class EmailSender {
-	private final String username = "javasingleton@gmail.com";
-	private final String password = "springboot1.8";
+	
+	ClassLoader classLoader = getClass().getClassLoader();
+	InputStream is;
+	Properties p = new Properties();
+	
+	public EmailSender() {
+		is = classLoader.getResourceAsStream("email.properties");
+		try {
+			p.load(is);
+		} catch (IOException e) {
+			 e.printStackTrace();
+		}
+	}
 	
 	public void sendEmail(String recipientAddress, String messageSubject, String messageText) {
+		
+		final String USERNAME = p.getProperty("USERNAME");
+		final String PASSWORD =  p.getProperty("PASSWORD");
+		
 		Properties prop = new Properties();
 		prop.put("mail.smtp.host", "smtp.gmail.com");
         prop.put("mail.smtp.port", "587");
@@ -24,7 +41,7 @@ public class EmailSender {
         Session session = Session.getInstance(prop,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(username, password);
+                        return new PasswordAuthentication(USERNAME, PASSWORD);
                     }
                 });
 
