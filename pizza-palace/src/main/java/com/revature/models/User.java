@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -14,6 +15,7 @@ public class User {
 	@Id
 	@Column(name="user_id")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	//@OneToMany(mappedBy="userId")
 	private int userId;
 	
 	@Column(name="user_name", unique=true, nullable=false)
