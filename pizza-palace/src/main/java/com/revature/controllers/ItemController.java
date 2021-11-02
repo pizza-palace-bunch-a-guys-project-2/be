@@ -1,5 +1,6 @@
 package com.revature.controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.revature.log.ItemLog;
 import com.revature.models.Item;
 import com.revature.models.User;
 import com.revature.services.ItemService;
@@ -22,19 +24,22 @@ import com.revature.services.ItemService;
 public class ItemController {
 
 	private ItemService itemServ;
+	private ItemLog itemLog;
 	
 	public ItemController() {
 		// TODO Auto-generated constructor stub
 	}
 
 	@Autowired
-	public ItemController(ItemService itemServ) {
+	public ItemController(ItemService itemServ, ItemLog itemLog) {
 		super();
 		this.itemServ = itemServ;
+		this.itemLog = itemLog;
 	}
 	
 	@GetMapping()
 	public ResponseEntity<List<Item>> getAllItems() {
+		itemLog.infoLogger("ItemController: Get request recived responding with all menu items.");
 		return new ResponseEntity<List<Item>>(itemServ.findAllItems(), HttpStatus.OK);
 	}
 	
@@ -44,5 +49,21 @@ public class ItemController {
 		itemServ.insertItem(item);
 		return new ResponseEntity<>(item.getItemName() + " inserted", HttpStatus.CREATED);
 	}
+	
+	@PostMapping("/initMenu")
+	public ResponseEntity<Object> insertInitMenu(@RequestBody List<Item> items) {
+		List<Item> checkDB = new ArrayList<>();
+		checkDB = itemServ.findAllItems();
+		if(checkDB.size() > 0) {
+			return new ResponseEntity<>("A Menu Already Exists", HttpStatus.FORBIDDEN);
+		}
+		for(Item item: items) {
+			itemServ.insertItem(item);
+		}
+		return new ResponseEntity<>("Menu Created", HttpStatus.CREATED);
+	}
+	
+	
+
 }
  
