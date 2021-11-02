@@ -1,2 +1,0 @@
-2021-11-02 13:34:24 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-02 13:39:05 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
