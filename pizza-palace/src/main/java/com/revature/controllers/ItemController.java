@@ -51,13 +51,15 @@ public class ItemController {
 		List<Item> checkDB = new ArrayList<>();
 		checkDB = itemServ.findAllItems();
 		if(checkDB.size() > 0) {
-			return new ResponseEntity<>("A Menu Already Exists", HttpStatus.ALREADY_REPORTED);
+			return new ResponseEntity<>("A Menu Already Exists", HttpStatus.FORBIDDEN);
 		}
 		for(Item item: items) {
 			itemServ.insertItem(item);
 		}
 		return new ResponseEntity<>("Menu Created", HttpStatus.CREATED);
 	}
+	
+	
 
 }
  
