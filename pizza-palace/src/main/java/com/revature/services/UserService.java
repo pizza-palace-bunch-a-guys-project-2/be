@@ -7,11 +7,13 @@ import org.springframework.stereotype.Service;
 
 import com.revature.models.User;
 import com.revature.repositories.UserRepository;
+import com.revature.utils.EmailSender;
 import com.revature.utils.PasswordEncrypter;
 
 @Service
 public class UserService {
 	private UserRepository uRepo;
+	private EmailSender email = new EmailSender();
 	private PasswordEncrypter encr = new PasswordEncrypter();
 	private String salt = "itMbrvNjVoId0qpezuvwvWIcybb0rI";
 
@@ -36,9 +38,13 @@ public class UserService {
 			return null;
 		}
 		
-		user.setUserPassword(getEncrypteString(user.getUserPassword()));
+		String pass = user.getUserPassword();
 		
+		user.setUserPassword(getEncrypteString(user.getUserPassword()));
 		uRepo.save(user);
+		
+		email.sendEmail(user.getUserEmail(), "User account: " + user.getUserName() +" created", "Account password: " + pass);
+		
 		return uRepo.findByUserName(user.getUserName());
 	}
 	
