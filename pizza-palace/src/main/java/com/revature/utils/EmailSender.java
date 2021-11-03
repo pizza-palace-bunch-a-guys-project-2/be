@@ -17,8 +17,6 @@ public class EmailSender {
 	private String password = System.getenv("email_password");
 	
 	public void sendEmail(String recipientAddress, String messageSubject, String messageText) {
-		System.out.println("Username : " + username);
-		
 		
 		Properties prop = new Properties();
 		prop.put("mail.smtp.host", "smtp.gmail.com");
