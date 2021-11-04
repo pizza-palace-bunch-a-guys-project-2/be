@@ -40,12 +40,38 @@ public class UserService {
 		
 		String pass = user.getUserPassword();
 		
-		user.setUserPassword(getEncrypteString(user.getUserPassword()));
+		user.setUserPassword(getEncrypteString(pass));
 		uRepo.save(user);
 		
 		email.sendEmail(user.getUserEmail(), "User account: " + user.getUserName() +" created", "Account password: " + pass);
 		
 		return uRepo.findByUserName(user.getUserName());
+	}
+	
+	public User updateUser(User user) {
+		User updatedUser = uRepo.findByUserName(user.getUserName());
+		
+		if(updatedUser == null) {
+			System.out.println("Such user doesn't exist");
+			return null;
+		}
+	
+		String pass = user.getUserPassword();
+		
+		updatedUser.setUserPassword(getEncrypteString(pass));
+		updatedUser.setUserFirstName(user.getUserFirstName());
+		updatedUser.setUserLastName(user.getUserLastName());
+		updatedUser.setUserEmail(user.getUserEmail());
+		updatedUser.setUserAddress(user.getUserAddress());
+		updatedUser.setUserCity(user.getUserCity());
+		updatedUser.setUserState(user.getUserState());
+		updatedUser.setUserZip(user.getUserZip());
+		
+		uRepo.save(updatedUser);
+		
+		email.sendEmail(user.getUserEmail(), "User account: " + user.getUserName() +" updated", "Account password: " + pass);
+		
+		return uRepo.findByUserName(updatedUser.getUserName());
 	}
 	
 	public User getUserByName(String name) {

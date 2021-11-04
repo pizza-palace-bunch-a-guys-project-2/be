@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -60,6 +61,7 @@ public class UserController {
 		return new ResponseEntity<User>(uServ.getUserByName(name), HttpStatus.OK);
 	}
 	
+	
 	@DeleteMapping("/{username}")
 	public ResponseEntity<String> deleteUser(@PathVariable("username") String name) {
 		User user = uServ.getUserByName(name);
@@ -84,6 +86,20 @@ public class UserController {
 		newUser.setUserPassword(null);
 		
 		return new ResponseEntity<>(newUser, HttpStatus.CREATED);
+	}
+	
+	@PatchMapping()
+	public ResponseEntity<Object> updateUser(@RequestBody User user) {
+		System.out.println("User JSON: " + user);
+		
+		User updatedUser = uServ.updateUser(user);
+		
+		if(updatedUser == null) {
+			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+		}
+		
+		updatedUser.setUserPassword(null);
+		return new ResponseEntity<>(updatedUser, HttpStatus.OK);
 	}
 	
 	@PostMapping("/login")
