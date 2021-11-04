@@ -45,21 +45,26 @@ public class ItemController {
 	
 	@PostMapping()
 	public ResponseEntity<Object> insertItem(@RequestBody Item item) {
+		itemLog.infoLogger("ItemController: insertItem() invoked");
 		System.out.println(item);
 		itemServ.insertItem(item);
+		itemLog.infoLogger("ItemController: " + item.toString() + " sent to service.");
 		return new ResponseEntity<>(item.getItemName() + " inserted", HttpStatus.CREATED);
 	}
 	
 	@PostMapping("/initMenu")
 	public ResponseEntity<Object> insertInitMenu(@RequestBody List<Item> items) {
+		itemLog.infoLogger("ItemController: insertInitMenu() invoked.");
 		List<Item> checkDB = new ArrayList<>();
 		checkDB = itemServ.findAllItems();
 		if(checkDB.size() > 0) {
+			itemLog.infoLogger("ItemController: Blocked attempted duplicate menu.");
 			return new ResponseEntity<>("A Menu Already Exists", HttpStatus.FORBIDDEN);
 		}
 		for(Item item: items) {
 			itemServ.insertItem(item);
 		}
+		itemLog.infoLogger("ItemController: New menu created.");
 		return new ResponseEntity<>("Menu Created", HttpStatus.CREATED);
 	}
 	
