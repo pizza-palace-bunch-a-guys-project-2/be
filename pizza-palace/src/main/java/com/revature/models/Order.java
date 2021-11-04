@@ -61,7 +61,14 @@ public class Order {
 		this.userId = userId;
 	}
 
-
+	public Order(String items, String paymentDetails, String address, float total) {
+		super();
+		this.items = items;
+		this.paymentDetails = paymentDetails;
+		this.address=address;
+		this.total = total;
+		
+	}
 	public int getOrderId() {
 		return orderId;
 	}
@@ -116,4 +123,10 @@ public class Order {
 				+ ", total=" + total + ", address=" + address + ", userId=" + userId + "]";
 	}
 	
+	 
+	public String toStringEmail() {
+		return "Pizza Palace Order Confirmation\n Your Order Id is: " + orderId + ". " 
+				+ "\nYour pizza will be delivered to " + address + ". " + "\nYour total is " + total +". " 
+				+ "\nYour order should contain " + items + ".";
+	}
 }
