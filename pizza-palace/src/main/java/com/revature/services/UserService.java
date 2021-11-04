@@ -55,9 +55,7 @@ public class UserService {
 			System.out.println("Such user doesn't exist");
 			return null;
 		}
-		
-		uRepo.delete(updatedUser);
-		
+	
 		String pass = user.getUserPassword();
 		
 		updatedUser.setUserPassword(getEncrypteString(pass));
