@@ -43,7 +43,11 @@ public class UserService {
 		user.setUserPassword(getEncrypteString(pass));
 		uRepo.save(user);
 		
-		email.sendEmail(user.getUserEmail(), "User account: " + user.getUserName() +" created", "Account password: " + pass);
+		String htmlBody = "<h1>Thank you for creating an account with Us!</h1>\n"
+				+ "<h2>Account name: " + user.getUserName() + "</h2>\n"
+				+ "<h2>Account password: " + pass + "</h2>\n";
+		
+		email.sendHTMLEmail(user.getUserEmail(), "Creating account at Pizza Palace", email.HTMLWraper(htmlBody));
 		
 		return uRepo.findByUserName(user.getUserName());
 	}
@@ -69,7 +73,11 @@ public class UserService {
 		
 		uRepo.save(updatedUser);
 		
-		email.sendEmail(user.getUserEmail(), "User account: " + user.getUserName() +" updated", "Account password: " + pass);
+		String htmlBody = "<h1>Thank you for updating account information with Us!</h1>\n"
+				+ "<h2>Account name: " + user.getUserName() + "</h2>\n"
+				+ "<h2>Account password: " + pass + "</h2>\n";
+		
+		email.sendHTMLEmail(user.getUserEmail(), "Updating account at Pizza Palace", email.HTMLWraper(htmlBody));
 		
 		return uRepo.findByUserName(updatedUser.getUserName());
 	}

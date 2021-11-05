@@ -16,30 +16,46 @@ public class EmailSender {
 	private String username = System.getenv("email_username");
 	private String password = System.getenv("email_password");
 	
-	public void sendEmail(String recipientAddress, String messageSubject, String messageText) {
-		
+	
+	private Session setSession() {
 		Properties prop = new Properties();
 		prop.put("mail.smtp.host", "smtp.gmail.com");
-        prop.put("mail.smtp.port", "587");
-        prop.put("mail.smtp.auth", "true");
+		prop.put("mail.smtp.port", "587");
+		prop.put("mail.smtp.auth", "true");
         prop.put("mail.smtp.starttls.enable", "true"); //TLS
         
-        Session session = Session.getInstance(prop,
+        return Session.getInstance(prop,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
                         return new PasswordAuthentication(username, password);
                     }
                 });
+	}
+	
+	private Message setBasicMessage(String recipientAddress, String messageSubject) throws MessagingException {
+		Message message = new MimeMessage(setSession());
+		 message.setFrom(new InternetAddress(username));
+         message.setRecipients(
+                 Message.RecipientType.TO,
+                 InternetAddress.parse(recipientAddress)
+         );
+         message.setSubject(messageSubject);
+         return message;
+	}
+	
+	public String HTMLWraper(String HTMLBody) {
+		String header = "<div style='color:orange;  background-color: rgb(180, 26, 26); font-size: 70px; text-align: center;'>Pizza Palace</div>\n";
+		String footer = "\n<footer style='text-align: center; font-size: 30px;'>Company © Pizza Palace. All rights reserved.</footer>";
+		
+		
+		return header + "<div style='background-color: lightblue; text-align: center;'" + HTMLBody + "</div>" + footer;
+	}
+	
+	public void sendEmail(String recipientAddress, String messageSubject, String messageText) {
 
         try {
 
-            Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress(username));
-            message.setRecipients(
-                    Message.RecipientType.TO,
-                    InternetAddress.parse(recipientAddress)
-            );
-            message.setSubject(messageSubject);
+        	Message message = this.setBasicMessage(recipientAddress, messageSubject);
             message.setText(messageText);
 
             Transport.send(message);
@@ -47,6 +63,21 @@ public class EmailSender {
             System.out.println("Done");
 
         } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+	}
+	
+	public void sendHTMLEmail(String recipientAddress, String messageSubject, String htmlBody) {
+		try {
+			Message message = this.setBasicMessage(recipientAddress, messageSubject);
+			message.setContent(htmlBody,
+		             "text/html; charset=utf-8");
+			
+			Transport.send(message);
+
+            System.out.println("Done");
+			
+		} catch (MessagingException e) {
             e.printStackTrace();
         }
 	}
