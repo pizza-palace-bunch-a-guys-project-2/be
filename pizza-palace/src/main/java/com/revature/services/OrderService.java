@@ -35,7 +35,13 @@ public class OrderService {
 	public void insertOrder(Order order) {
 		oRepo.save(order);
 		User umod = uRepo.findByUserId(order.getUserId());
-		email.sendEmail(umod.getUserEmail(), "Order Confirmation", order.toStringEmail());
+		if(umod != null) {
+			email.sendEmail(umod.getUserEmail(), "Order Confirmation", order.toStringEmail());
+		}else {
+			System.out.println(umod);
+			System.out.println(order);
+		}
+		
 	}
 	
 	public List<Order> getAllOrders(){
