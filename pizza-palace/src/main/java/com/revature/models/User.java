@@ -151,7 +151,7 @@ public class User {
 		if(userId != 0) {
 			result += "Id: " + userId + ", ";
 		}
-		result += "User Name: " + userName + ", " + "Password: " + userPassword + ", ";
+		result += "User Name: " + userName + ", ";
 		if(userEmail != null) {
 			result += "Email: " + userEmail + ", ";
 		}
