@@ -10,16 +10,21 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.springframework.beans.factory.annotation.Autowired;
 
+import com.revature.log.UserLog;
 import com.revature.models.User;
 import com.revature.repositories.UserRepository;
 import com.revature.services.UserService;
+import com.revature.utils.EmailSender;
+import com.revature.utils.PasswordEncrypter;
 
 public class UserServiceTests {
 	
 	@Mock
 	private UserRepository uRepo;
+	private UserLog userLog;
+	private EmailSender email;
+	private PasswordEncrypter encr;
 	private UserService uServ;
 	private List<User> usersList;
 	private User testUser1;
@@ -31,7 +36,7 @@ public class UserServiceTests {
 	public void setUp() throws Exception {
 		MockitoAnnotations.initMocks(this);
 		
-		uServ = new UserService(uRepo);
+		uServ = new UserService(uRepo, userLog, email, encr);
 		
 		testUser1 = new User(1, "test", "test", "test@test.com", "test", "test", "test_address", "test_city", "test_state", "test_zip");
 		testUser2 = new User(2, "test2", "test", "test@test.com", "test", "test", "test_address", "test_city", "test_state", "test_zip");

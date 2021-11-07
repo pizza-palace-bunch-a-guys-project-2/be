@@ -1,72 +1,92 @@
 
-
-2021-11-02 14:40:20 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-02 14:58:27 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-02 14:58:38 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-02 14:58:41 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-02 14:58:44 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-02 15:06:21 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 14:26:47 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 14:30:15 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 17:55:29 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 17:56:31 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 17:56:51 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 17:57:05 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 17:58:14 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 17:58:52 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 17:59:28 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 17:59:37 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 17:59:48 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 18:00:25 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 18:05:09 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 18:06:24 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 18:07:39 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 18:07:43 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 18:13:47 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 18:17:11 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 18:17:28 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 18:27:17 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 18:29:53 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 18:43:26 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 18:55:59 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 19:26:49 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 19:27:31 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 19:36:20 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 19:38:35 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 19:39:14 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 19:39:18 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 19:41:04 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 19:41:09 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 19:51:12 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 19:51:28 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 19:58:00 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 19:59:21 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 20:00:52 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 20:13:55 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 20:29:23 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 20:33:33 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-03 20:33:51 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 08:55:31 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 08:57:19 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:05:28 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:05:55 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:15:29 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:15:56 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:16:35 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:17:01 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:17:12 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:17:22 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:19:07 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:20:10 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:22:25 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:35:08 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:35:24 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:35:43 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:36:25 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 09:39:08 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 13:29:39 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 13:35:46 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 13:36:28 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 13:37:27 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
-2021-11-04 14:28:41 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
 2021-11-04 14:28:41 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-05 10:02:25 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
+2021-11-05 10:02:25 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-05 16:01:38 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
+2021-11-05 16:01:38 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-07 11:08:03 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-07 11:08:03 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-07 11:08:03 INFO  UserLog:19 - UserService: getEncrypteString() invoked.
+2021-11-07 11:08:03 INFO  UserLog:19 - UserController: Login User: User [userId=0, userName=edit, userPassword=edit, userEmail=null, userFirstName=null, userLastName=null, userAddress=null, userCity=null, userState=null, userZip=null]was successfull.
+2021-11-07 11:08:04 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
+2021-11-07 11:08:04 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-07 11:13:40 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-07 11:13:40 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-07 11:13:40 INFO  UserLog:19 - UserService: getEncrypteString() invoked.
+2021-11-07 11:13:40 INFO  UserLog:19 - UserController: Login User: User [userId=0, userName=edit, userPassword=edit, userEmail=null, userFirstName=null, userLastName=null, userAddress=null, userCity=null, userState=null, userZip=null]was successfull.
+2021-11-07 11:13:40 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
+2021-11-07 11:13:40 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-07 11:16:03 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-07 11:16:03 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-07 11:16:03 INFO  UserLog:19 - UserService: getEncrypteString() invoked.
+2021-11-07 11:16:03 INFO  UserLog:19 - UserController: Login User: User [userId=0, userName=edit, userPassword=edit, userEmail=null, userFirstName=null, userLastName=null, userAddress=null, userCity=null, userState=null, userZip=null]was successfull.
+2021-11-07 11:16:03 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
+2021-11-07 11:16:03 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-07 11:16:30 INFO  UserLog:19 - UserController: updateUser() invoked.
+2021-11-07 11:16:30 INFO  UserLog:19 - UserService: updateUser() invoked.
+2021-11-07 11:16:30 INFO  UserLog:19 - UserService: getEncrypteString() invoked.
+2021-11-07 11:16:31 INFO  EmailLog:19 - EmailSender: message with header: Updating account at Pizza Palace
+ and HTML body:
+ <div style='color:orange;  background-color: rgb(180, 26, 26); font-size: 70px; text-align: center;'>Pizza Palace</div>
+<div style='background-color: lightblue; text-align: center;'<h1>Thank you for updating account information with Us!</h1>
+<h2>Account name: edit</h2>
+<h2>Account password: edit</h2>
+</div>
+
+<footer style='text-align: center; font-size: 30px; background-color: lightblue;'>Company © Pizza Palace. All rights reserved.</footer>
+was sent to: maustrauk@gmail.com
+2021-11-07 11:16:31 INFO  UserLog:19 - UserService: User [userId=7, userName=edit, userPassword=g1gYXfvZEm4V3Mw5u86FOz0DKS6syg2Osop6o3eiFGo=, userEmail=maustrauk@gmail.com, userFirstName=Edit, userLastName=Editdd, userAddress=edit, userCity=edit, userState=VA, userZip=66666] updated.
+2021-11-07 11:16:31 INFO  UserLog:19 - UserController: User: User [userId=7, userName=edit, userPassword=g1gYXfvZEm4V3Mw5u86FOz0DKS6syg2Osop6o3eiFGo=, userEmail=maustrauk@gmail.com, userFirstName=Edit, userLastName=Editdd, userAddress=edit, userCity=edit, userState=VA, userZip=66666]was successfully updated.
+2021-11-07 11:18:43 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-07 11:18:43 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-07 11:18:43 DEBUG UserLog:24 - UserService: There is no such user
+2021-11-07 11:18:43 DEBUG UserLog:24 - UserController: Login User: User [userId=0, userName=editt, userPassword=edit, userEmail=null, userFirstName=null, userLastName=null, userAddress=null, userCity=null, userState=null, userZip=null]was unsuccessfull.
+2021-11-07 11:34:40 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-07 11:34:40 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-07 11:34:40 DEBUG UserLog:24 - UserService: There is no such user
+2021-11-07 11:34:40 DEBUG UserLog:24 - UserController: Login User: User with User Name: editt, Password: edit, ]  was unsuccessfull.
+2021-11-07 11:35:43 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-07 11:35:43 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-07 11:35:43 DEBUG UserLog:24 - UserService: There is no such user
+2021-11-07 11:35:43 DEBUG UserLog:24 - UserController: Login User: User with User Name: editt, Password: edit,  was unsuccessfull.
+2021-11-07 11:37:01 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-07 11:37:01 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-07 11:37:01 DEBUG UserLog:24 - UserService: There is no such user
+2021-11-07 11:37:01 DEBUG UserLog:24 - UserController: Login User: User with User Name: editt, Password: edit,  was unsuccessfull.
+2021-11-07 11:37:47 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-07 11:37:47 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-07 11:37:47 DEBUG UserLog:24 - UserService: There is no such user
+2021-11-07 11:37:47 DEBUG UserLog:24 - UserController: Login User: User with User Name: editt, Password: edit,  was unsuccessfull.
+2021-11-07 11:37:57 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-07 11:37:57 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-07 11:37:57 DEBUG UserLog:24 - UserService: There is no such user
+2021-11-07 11:37:57 DEBUG UserLog:24 - UserController: Login User: User with User Name: editt, Password: edit,  was unsuccessfull.
+2021-11-07 11:38:14 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-07 11:38:14 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-07 11:38:14 DEBUG UserLog:24 - UserService: There is no such user
+2021-11-07 11:38:14 DEBUG UserLog:24 - UserController: Login User: User with User Name: editt, Password: edit was unsuccessfull.
+2021-11-07 11:39:34 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-07 11:39:34 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-07 11:39:34 DEBUG UserLog:24 - UserService: There is no such user
+2021-11-07 11:39:34 DEBUG UserLog:24 - UserController: Login User: User with [User Name: editt, Password: edit]  was unsuccessfull.
+2021-11-07 11:40:16 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-07 11:40:16 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-07 11:40:16 INFO  UserLog:19 - UserService: getEncrypteString() invoked.
+2021-11-07 11:40:16 INFO  UserLog:19 - UserController: Login User: User with [User Name: edit, Password: edit]  was successfull.
+2021-11-07 11:40:16 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
+2021-11-07 11:40:16 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-07 11:40:34 INFO  UserLog:19 - UserController: updateUser() invoked.
+2021-11-07 11:40:34 INFO  UserLog:19 - UserService: updateUser() invoked.
+2021-11-07 11:40:34 INFO  UserLog:19 - UserService: getEncrypteString() invoked.
+2021-11-07 11:40:36 INFO  EmailLog:19 - EmailSender: message with header: Updating account at Pizza Palace
+ and HTML body:
+ <div style='color:orange;  background-color: rgb(180, 26, 26); font-size: 70px; text-align: center;'>Pizza Palace</div>
+<div style='background-color: lightblue; text-align: center;'<h1>Thank you for updating account information with Us!</h1>
+<h2>Account name: edit</h2>
+<h2>Account password: edit</h2>
+</div>
+
+<footer style='text-align: center; font-size: 30px; background-color: lightblue;'>Company © Pizza Palace. All rights reserved.</footer>
+was sent to: maustrauk@gmail.com
+2021-11-07 11:40:36 INFO  UserLog:19 - UserService: User with [Id: 7, User Name: edit, Password: g1gYXfvZEm4V3Mw5u86FOz0DKS6syg2Osop6o3eiFGo=, Email: maustrauk@gmail.com, First Name: Editt, Last Name: Editdd, Address: edit, City: edit, State: VA, Zip: 66666]  updated.
+2021-11-07 11:40:36 INFO  UserLog:19 - UserController: User: User with [Id: 7, User Name: edit, Password: g1gYXfvZEm4V3Mw5u86FOz0DKS6syg2Osop6o3eiFGo=, Email: maustrauk@gmail.com, First Name: Editt, Last Name: Editdd, Address: edit, City: edit, State: VA, Zip: 66666]  was successfully updated.
