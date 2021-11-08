@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.log.ItemLog;
 import com.revature.models.Item;
-import com.revature.models.User;
 import com.revature.services.ItemService;
 
 @RestController
