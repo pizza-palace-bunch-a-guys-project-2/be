@@ -26,6 +26,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.models.Order;
 import com.revature.models.User;
 import com.revature.services.OrderService;
+import com.revature.log.ItemLog;
+
 
 @RestController
 @RequestMapping(value="/checkout")
@@ -34,12 +36,15 @@ public class OrderController {
 
 	private OrderService oServ;
 	
+	private final ItemLog log = new ItemLog();;
+	
 	public OrderController() {}
 	
 	@Autowired
 	public OrderController(OrderService oServ) {
 		this.oServ=oServ;
 	}
+	
 	
 	@PostMapping(value="/orderplaced", consumes=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> insertOrder(@RequestBody LinkedHashMap<String, String> oMap) {
@@ -48,6 +53,7 @@ public class OrderController {
 		String items = new String(oMap.get("items"));
 		
 		oServ.insertOrder(new Order(items, oMap.get("paymentDetails"), oMap.get("address"), Float.parseFloat(oMap.get("total")), Integer.parseInt(oMap.get("userId"))));
+		log.infoLogger("OrderController: Post insertOrder Method");
 		return new ResponseEntity<>("Order Successfully Placed", HttpStatus.CREATED);
 	}
 	
@@ -59,7 +65,7 @@ public class OrderController {
 		for(Order order : oList) {
 			oServ.insertOrder(order);
 		}
-		
+		log.infoLogger("OrderController: Get insertInit Method");
 		return new ResponseEntity<List<Order>>(oServ.getAllOrders(), HttpStatus.CREATED);
 	}
 	
