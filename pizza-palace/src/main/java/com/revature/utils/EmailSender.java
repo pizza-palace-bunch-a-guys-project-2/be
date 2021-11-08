@@ -10,13 +10,24 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import org.springframework.stereotype.Component;
 
+import com.revature.log.EmailLog;
+
+@Component
 public class EmailSender {
 	
-	private String username = System.getenv("email_username");
-	private String password = System.getenv("email_password");
+	private String username;
+	private String password;
+	private EmailLog emailLog;
 	
-	
+	public EmailSender(EmailLog emailLog) {
+		super();
+		this.username = System.getenv("email_username");
+		this.password = System.getenv("email_password");
+		this.emailLog = emailLog;
+	}
+
 	private Session setSession() {
 		Properties prop = new Properties();
 		prop.put("mail.smtp.host", "smtp.gmail.com");
@@ -45,10 +56,10 @@ public class EmailSender {
 	
 	public String HTMLWraper(String HTMLBody) {
 		String header = "<div style='color:orange;  background-color: rgb(180, 26, 26); font-size: 70px; text-align: center;'>Pizza Palace</div>\n";
-		String footer = "\n<footer style='text-align: center; font-size: 30px;'>Company © Pizza Palace. All rights reserved.</footer>";
+		String footer = "\n<footer style='text-align: center; font-size: 30px; background-color: lightblue;'>Company © Pizza Palace. All rights reserved.</footer>";
 		
 		
-		return header + "<div style='background-color: lightblue; text-align: center;'" + HTMLBody + "</div>" + footer;
+		return header + "<div style='background-color: lightblue; text-align: center;'" + HTMLBody + "</div>\n" + footer;
 	}
 	
 	public void sendEmail(String recipientAddress, String messageSubject, String messageText) {
@@ -59,11 +70,13 @@ public class EmailSender {
             message.setText(messageText);
 
             Transport.send(message);
-
-            System.out.println("Done");
+            
+            emailLog.infoLogger("EmailSender: message with header: " + messageSubject
+            		+ "\n and text:\n " + messageText
+            		+ "\nwas sent to: " + recipientAddress);
 
         } catch (MessagingException e) {
-            e.printStackTrace();
+           emailLog.exceptionLog(e);
         }
 	}
 	
@@ -75,10 +88,12 @@ public class EmailSender {
 			
 			Transport.send(message);
 
-            System.out.println("Done");
+			emailLog.infoLogger("EmailSender: message with header: " + messageSubject
+            		+ "\n and HTML body:\n " + htmlBody
+            		+ "\nwas sent to: " + recipientAddress);
 			
 		} catch (MessagingException e) {
-            e.printStackTrace();
+			emailLog.exceptionLog(e);
         }
 	}
 
