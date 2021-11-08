@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -145,12 +144,39 @@ public class User {
 	public void setUserZip(String userZip) {
 		this.userZip = userZip;
 	}
-
+	
 	@Override
 	public String toString() {
-		return "User [userId=" + userId + ", userName=" + userName + ", userPassword=" + userPassword + ", userEmail="
-				+ userEmail + ", userFirstName=" + userFirstName + ", userLastName=" + userLastName + ", userAddress="
-				+ userAddress + ", userCity=" + userCity + ", userState=" + userState + ", userZip=" + userZip + "]";
+		String result = "User with [";
+		if(userId != 0) {
+			result += "Id: " + userId + ", ";
+		}
+    
+		result += "User Name: " + userName + ", ";
+
+		if(userEmail != null) {
+			result += "Email: " + userEmail + ", ";
+		}
+		if(userFirstName != null) {
+			result += "First Name: " + userFirstName + ", ";
+		}
+		if(userLastName != null) {
+			result += "Last Name: " + userLastName + ", ";
+		}
+		if(userAddress != null) {
+			result += "Address: " + userAddress + ", ";
+		}
+		if(userCity != null) {
+			result += "City: " + userCity + ", ";
+		}
+		if(userState != null) {
+			result += "State: " + userState + ", ";
+		}
+		if(userZip != null) {
+			result += "Zip: " + userZip + ", ";
+		}
+		result = result.substring(0, (result.length() - 2));
+		
+		return result + "] ";
 	}
-	
 }

@@ -13,6 +13,9 @@ import java.util.Random;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class PasswordEncrypter {
     private final Random random = new SecureRandom();  
     private final String characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";  

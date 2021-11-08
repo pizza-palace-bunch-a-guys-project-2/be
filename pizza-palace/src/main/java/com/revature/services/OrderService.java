@@ -14,7 +14,7 @@ import com.revature.utils.EmailSender;
 @Service
 public class OrderService {
 	
-	private EmailSender email = new EmailSender();
+	private EmailSender email;
 	
 	private OrderRepository oRepo;
 	
@@ -26,10 +26,11 @@ public class OrderService {
 	
 	
 	@Autowired
-	public OrderService(OrderRepository oRepo, UserRepository uRepo) {
+	public OrderService(OrderRepository oRepo, UserRepository uRepo, EmailSender email) {
 		super();
 		this.oRepo=oRepo;
 		this.uRepo=uRepo;
+		this.email = email;
 	}
 	
 	public void insertOrder(Order order) {
