@@ -35,7 +35,7 @@ public class ItemService {
 		itemLog.infoLogger("ItemService: insertItem() invoked.");
 		Item verifyItem = itemRepo.findByItemName(item.getItemName());
 		
-		if(verifyItem == null) {
+		if(verifyItem != null) {
 			System.out.println("Item already inserted: " + item.toString());
 			itemLog.infoLogger("ItemService: Item already exists");
 			return null;
