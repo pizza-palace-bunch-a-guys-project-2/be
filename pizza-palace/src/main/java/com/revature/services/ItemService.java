@@ -33,13 +33,13 @@ public class ItemService {
 	
 	public Item insertItem(Item item) {
 		itemLog.infoLogger("ItemService: insertItem() invoked.");
-		//Item verifyItem = itemRepo.findByItemName(item.getItemName());
+		Item verifyItem = itemRepo.findByItemName(item.getItemName());
 		
-//		if(verifyItem == null) {
-//			System.out.println("Item already inserted: " + item.toString());
-//			itemLog.infoLogger("ItemService: Item already exists");
-//			return null;
-//		}
+		if(verifyItem != null) {
+			System.out.println("Item already inserted: " + item.toString());
+			itemLog.infoLogger("ItemService: Item already exists");
+			return null;
+		}
 		itemLog.infoLogger("ItemService: " + item.toString() + " added to DB.");
 		itemRepo.save(item);
 		
