@@ -34,3 +34,6 @@ build/
 
 ### Properties ###
 email.properties
+
+###Log file###
+log4j-application.log
