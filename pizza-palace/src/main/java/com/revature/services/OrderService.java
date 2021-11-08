@@ -147,7 +147,7 @@ public class OrderService {
 					+ "              align=\"middle\"\r\n"
 					+ "            />\r\n"
 					+ "\r\n"
-					+ "            <h1></h1>\r\n"
+					+ "            <h1>Pizza Palace</h1>\r\n"
 					+ "          </td>\r\n"
 					+ "        </tr>\r\n"
 					+ "      </table>\r\n"
@@ -187,7 +187,7 @@ public class OrderService {
 					+ "</html>\r\n"
 					+ "";
 			
-			email.sendHTMLEmail(umod.getUserEmail(), "Order Confirmation", email.HTMLWraper(html));
+			email.sendHTMLEmail(umod.getUserEmail(), "Order Confirmation", html);
 			
 //			email.sendEmail(
 //						umod.getUserEmail(), 
