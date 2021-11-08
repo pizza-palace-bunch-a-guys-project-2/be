@@ -38,7 +38,7 @@ public class ItemController {
 	
 	@GetMapping()
 	public ResponseEntity<List<Item>> getAllItems() {
-		itemLog.infoLogger("ItemController: Get request recived responding with all menu items.");
+		itemLog.infoLogger("ItemController: Get request received responding with all menu items.");
 		return new ResponseEntity<List<Item>>(itemServ.findAllItems(), HttpStatus.OK);
 	}
 	
