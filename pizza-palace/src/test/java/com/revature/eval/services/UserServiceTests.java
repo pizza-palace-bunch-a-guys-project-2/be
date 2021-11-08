@@ -22,6 +22,8 @@ public class UserServiceTests {
 	
 	@Mock
 	private UserRepository uRepo;
+	
+	@Mock
 	private UserLog userLog;
 	private EmailSender email;
 	private PasswordEncrypter encr;
