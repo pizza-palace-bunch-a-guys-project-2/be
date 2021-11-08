@@ -80,3 +80,48 @@
 2021-11-04 14:48:59 INFO  ItemLog:20 - ItemService: Getting all items from DB.
 2021-11-04 14:49:12 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
 2021-11-04 14:49:12 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-05 07:16:39 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
+2021-11-05 07:16:39 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-05 07:34:06 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
+2021-11-05 07:34:06 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-05 14:08:25 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
+2021-11-05 14:08:25 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-05 14:17:01 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
+2021-11-05 14:17:01 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-05 14:21:24 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
+2021-11-05 14:21:24 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-05 14:22:39 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
+2021-11-05 14:22:39 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-05 14:23:26 INFO  ItemLog:20 - ItemController: Get request recived responding with all menu items.
+2021-11-05 14:23:26 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemController: insertInitMenu() invoked.
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: Getting all items from DB.
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: insertItem() invoked.
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: Item already exists
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: insertItem() invoked.
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: Item already exists
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: insertItem() invoked.
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: Item already exists
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: insertItem() invoked.
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: Item already exists
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: insertItem() invoked.
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: Item already exists
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: insertItem() invoked.
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: Item already exists
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: insertItem() invoked.
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: Item already exists
+2021-11-07 16:09:19 INFO  ItemLog:20 - ItemService: insertItem() invoked.
+2021-11-07 16:09:20 INFO  ItemLog:20 - ItemService: Item already exists
+2021-11-07 16:09:20 INFO  ItemLog:20 - ItemService: insertItem() invoked.
+2021-11-07 16:09:20 INFO  ItemLog:20 - ItemService: Item already exists
+2021-11-07 16:09:20 INFO  ItemLog:20 - ItemService: insertItem() invoked.
+2021-11-07 16:09:20 INFO  ItemLog:20 - ItemService: Item already exists
+2021-11-07 16:09:20 INFO  ItemLog:20 - ItemService: insertItem() invoked.
+2021-11-07 16:09:20 INFO  ItemLog:20 - ItemService: Item already exists
+2021-11-07 16:09:20 INFO  ItemLog:20 - ItemService: insertItem() invoked.
+2021-11-07 16:09:20 INFO  ItemLog:20 - ItemService: Item already exists
+2021-11-07 16:09:20 INFO  ItemLog:20 - ItemService: insertItem() invoked.
+2021-11-07 16:09:20 INFO  ItemLog:20 - ItemService: Item already exists
+2021-11-07 16:09:20 INFO  ItemLog:20 - ItemService: insertItem() invoked.
+2021-11-07 16:09:20 INFO  ItemLog:20 - ItemService: Item already exists
+2021-11-07 16:09:20 INFO  ItemLog:20 - ItemController: New menu created.
