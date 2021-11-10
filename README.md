@@ -36,6 +36,9 @@ List of features ready:
 
 ## Usage
 [The current project](http://menuitembucket.s3-website.us-east-2.amazonaws.com/) is running on the AWS S3 service.\
+After launching this application you should see `com.revature.PizzaPalaceApplication : Started PizzaPalaceApplication in ... seconds (JVM running for 5.021)`\
+You can use [Postman API](https://www.postman.com/) to check if you can reach featured endpoints using your `localhost:9015`:\
+![Postman screenshot](/readme_pic_1.jpg?raw=true)
 Don't forget to install [the application front end](https://github.com/pizza-palace-bunch-a-guys-project-2/fe).
 
 ## Contributors
