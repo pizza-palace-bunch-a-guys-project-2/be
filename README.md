@@ -14,6 +14,7 @@ List of features ready:
 
 ## Usage
 [The current project](http://menuitembucket.s3-website.us-east-2.amazonaws.com/) is running on the AWS S3 service.\
+Don't forget to install [the application front end](https://github.com/pizza-palace-bunch-a-guys-project-2/fe).
 
 ## Contributors
 * [Iaroslav Mokroguz](https://github.com/maustrauk)
