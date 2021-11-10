@@ -19,3 +19,11 @@
 2021-11-08 17:53:28 DEBUG UserLog:24 - UserController: Login User: User with [User Name: edit]  was unsuccessfull.
 2021-11-09 09:49:06 INFO  ItemLog:20 - OrderController: Post insertOrder Method
 2021-11-09 10:10:58 INFO  ItemLog:20 - OrderController: Post insertOrder Method
+2021-11-10 16:11:43 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-10 16:11:43 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-10 16:11:43 INFO  UserLog:19 - UserService: getEncrypteString() invoked.
+2021-11-10 16:11:43 INFO  UserLog:19 - UserController: Login User: User with [User Name: edit]  was successfull.
+2021-11-10 17:13:31 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-10 17:13:31 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-10 17:13:31 INFO  UserLog:19 - UserService: getEncrypteString() invoked.
+2021-11-10 17:13:31 INFO  UserLog:19 - UserController: Login User: User with [User Name: edit]  was successfull.
