@@ -27,10 +27,10 @@ public class Swagger2Config {
     
     private ApiInfo apiEndPointsInfo()
     {
-        return new ApiInfoBuilder().title("Water My Plants back-end info")
-                .description("Build-week project: Water My Plants")
+        return new ApiInfoBuilder().title("Pizza Palace")
+                .description("Pizza Palace: back-end API")
                 .contact(new Contact("Iaroslav Mokroguz",
-                        "http://www.lambdaschool.com",
+                        "http://www.revature.com",
                         "maustrauk@gmail.com"))
                 .license("MIT")
                 //.licenseUrl("https://github.com/LambdaSchool/java-springfoundation/blob/master/LICENSE")
