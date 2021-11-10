@@ -1,0 +1,21 @@
+2021-11-08 17:43:20 INFO  UserLog:19 - UserController: getAllUser() invoked.
+2021-11-08 17:43:20 INFO  UserLog:19 - UserService: Getting all users from DB.
+2021-11-08 17:47:38 INFO  UserLog:19 - UserController: getUserByName() invoked.
+2021-11-08 17:47:38 INFO  UserLog:19 - UserService: getUserByName() invoked.
+2021-11-08 17:47:38 INFO  UserLog:19 - UserController: Sending user: User with [Id: 7, User Name: edit, Email: maustrauk@gmail.com, First Name: Edit, Last Name: Editdd, Address: edit, City: edit, State: VA, Zip: 33333] 
+2021-11-08 17:47:38 INFO  UserLog:19 - UserService: getUserByName() invoked.
+2021-11-08 17:48:27 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-08 17:48:27 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-08 17:48:27 INFO  UserLog:19 - UserService: getEncrypteString() invoked.
+2021-11-08 17:48:27 INFO  UserLog:19 - UserController: Login User: User with [User Name: edit]  was successfull.
+2021-11-08 17:51:46 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-08 17:51:46 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-08 17:51:47 INFO  UserLog:19 - UserService: getEncrypteString() invoked.
+2021-11-08 17:51:47 INFO  UserLog:19 - UserController: Login User: User with [User Name: edit]  was successfull.
+2021-11-08 17:53:28 INFO  UserLog:19 - UserController: loginUser() invoked.
+2021-11-08 17:53:28 INFO  UserLog:19 - UserService: verifyPassword() invoked.
+2021-11-08 17:53:28 INFO  UserLog:19 - UserService: getEncrypteString() invoked.
+2021-11-08 17:53:28 DEBUG UserLog:24 - UserService: Passwords didn't matched
+2021-11-08 17:53:28 DEBUG UserLog:24 - UserController: Login User: User with [User Name: edit]  was unsuccessfull.
+2021-11-09 09:49:06 INFO  ItemLog:20 - OrderController: Post insertOrder Method
+2021-11-09 10:10:58 INFO  ItemLog:20 - OrderController: Post insertOrder Method
