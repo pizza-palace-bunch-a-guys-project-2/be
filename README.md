@@ -10,6 +10,9 @@ Pizza Palace is a Single Page Application designed to facilitate online pizza or
 * PostgreSQL version 13
 * AWS EC2
 * Jenkins
+* Log4j version 1.2.17
+* JUnit version 5.7.0
+* Mockito version 3.11.2
 
 ## Features
 List of features ready:
