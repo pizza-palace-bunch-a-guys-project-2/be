@@ -9,6 +9,7 @@ Pizza Palace is a Single Page Application designed to facilitate online pizza or
 * Spring Data version 2021.0.6
 * PostgreSQL version 13
 * AWS EC2
+* AWS RDS
 * Jenkins
 * Log4j version 1.2.17
 * JUnit version 5.7.0
