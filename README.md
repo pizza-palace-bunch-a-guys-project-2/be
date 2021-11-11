@@ -22,7 +22,7 @@ List of features ready:
 * Sending HTML email confirmation by using Java Mail API.
 * Logging every action by using Log4j.
 * Project deployment by using Jenkins and AWS EC2 services.
-* Services and controllers tests implemented.
+* Services and controllers tests implemented by using JUnit and Mockito toolds.
 
 ## Getting Started
 1. Prepare your database for work with back-end.
