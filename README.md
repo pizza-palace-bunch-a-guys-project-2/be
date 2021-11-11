@@ -18,7 +18,10 @@ Pizza Palace is a Single Page Application designed to facilitate online pizza or
 ## Features
 List of features ready:
 * [List of all enabled endpoints and models](http://ec2-18-116-241-177.us-east-2.compute.amazonaws.com:9015/swagger-ui.html).
-
+* User password encryption by using Salt and Base64 technology.
+* Sending HTML email confirmation by using Java Mail API.
+* Logging every action by using Log4j.
+* Project deployment by using Jenkins and AWS EC2 services.
 
 ## Getting Started
 1. Prepare your database for work with back-end.
